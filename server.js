@@ -63,9 +63,9 @@ const guestsArray = Object.keys(guests)
      pronoun = "she's"
    }
  // good fellow song 
- const goodFellowSong = [`For ${pronoun} a jolly good fellow`,`For ${pronoun} a jolly good fellow`,`For ${pronoun} a jolly good fellow, which nobody can deny!`];
+ const goodFellowSong = [`For ${pronoun} a jolly good fellow, `,`For ${pronoun} a jolly good fellow, `,`For ${pronoun} a jolly good fellow, which nobody can deny!`];
 
- res.render("happy", { name, gender, number, guestsArray, celebrantSong, goodFellowSong }); //render happy.hbs
+ res.render("happy", { name, gender, number, guests, guestsArray, celebrantSong, goodFellowSong }); //render happy.hbs
 });
 
 //Makes the app listen to port 3000

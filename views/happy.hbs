@@ -45,9 +45,11 @@
   <section class="w3-container" id="input"> 
    <h2>Output</h2>
      <div id="output">
-   <p>Celebrant: {{name}}</p>
-   <p>Gender: {{gender}}</p>
-   <p>Number of Guests: {{number}}</p>
+   <ul>
+      {{#each guests}}
+      <li>{{this}}</li>
+      {{/each}}
+   </ul>
     </div>
   </section>
 
